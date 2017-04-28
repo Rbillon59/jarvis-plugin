@@ -1,2 +1,4 @@
-#!/bin/bash
-# Use only if you need to perform changes on the user system such as installing software
+#!/usr/bin/env bash
+
+# Install PHP to be able to execute php command
+[[ -z $(which php5-cli) ]] && sudo apt-get --yes --force-yes install php5-cli
